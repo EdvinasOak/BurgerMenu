@@ -1,5 +1,51 @@
-$bg: blue;
+$darkGreen: #107a8b;
+$lightGreen: #2cb978;
+$saladGreen: #83e85a;
+$camoGreen: #3b5441;
+$white: #fffff2;
+
+@font-face {
+  src: url(fonts/Tahu.ttf);
+  font-family: Tahu;
+}
 
 body {
-    background-color: $bg;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vw;
+  width: 100vw;
+  position: fixed;
+}
+
+.textHalf {
+  background: #3b5441;
+  text-align: center;
+
+  .heroSlogan {
+    font-size: 6vw;
+    font-family: Tahu, outline;
+    letter-spacing: 0.1vw;
+    color: $white;
+    word-break: break-word;
+    margin: 20% 20% 0% 20%;
+    display: inline-block;
+  }
+}
+.logo {
+  background: #2cb978;
+  font-family: Tahu, outline;
+  overflow: hidden;
+  .backText {
+    font-size: 22vw;
+    margin: 25% 0% 0% -5%;
+    color: rgba(255, 255, 242, 0.2);
+    transform: rotate(-40deg);
+    letter-spacing: 0.5vw;
+    letter-spacing: 1.4vw;
+  }
 }

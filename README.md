@@ -1,11 +1,11 @@
-# Webpack Boilerplate
+# A Burger place menu 🍔
 
-A basic Webpack boilerplate with SASS, Typescript, prettier, dev server and eslint with airbnb guidelines.
+A case study website
 
 ## Installation
 
 ```
-git clone https://github.com/EdvinasOak/Webpack-Boilerplate.git
+git clone https://github.com/EdvinasOak/BurgerMenu.git
 npm i
 ```
 
