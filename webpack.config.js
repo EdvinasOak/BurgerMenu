@@ -1,11 +1,17 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = {
+  entry: path.join(__dirname, 'src/index.ts'),
+  output: {
+    filename: 'index.js',
+    path: __dirname
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.ts?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
